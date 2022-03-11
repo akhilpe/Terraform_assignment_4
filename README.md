@@ -1,5 +1,5 @@
 
-# Aws Account creation
+# Aws Instance creation
 
 For this Project aws account is created and attached the volumes by using terraform 
 and installed apache2 server
