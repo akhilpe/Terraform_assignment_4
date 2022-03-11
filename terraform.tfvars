@@ -1,5 +1,5 @@
-access_key          = "AKIASZ5O5XHCKRZZJGX2"
-secret_key          = "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"
+access_key          = "XXXXXXXXX"
+secret_key          = "XXXXXXXXX"
 aws_region          = "us-east-1"
 ami                 = "ami-04505e74c0741db8d"
 instance_type       = "t2.micro"
