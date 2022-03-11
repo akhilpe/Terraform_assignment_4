@@ -45,5 +45,5 @@ terraform init
 Place the Access_key and Secret_key by using IAM policies
 and  then it created aws instance and volumes and then volume going to attach the same instance.
 Installed apache2 server and started the service 
-and their is a destory file where to uninstall 
+and their is a destory.tf file where to uninstall 
 apache2 service first and then it destroy instance
