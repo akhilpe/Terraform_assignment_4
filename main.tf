@@ -29,6 +29,9 @@ resource "aws_instance" "server" {
       host        = aws_instance.server.public_ip
    }
   }
+  lifecycle {
+    create_before_destroy = true
+  }
  }
 
 resource "aws_key_pair" "key" {
