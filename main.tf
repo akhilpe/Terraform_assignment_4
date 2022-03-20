@@ -25,14 +25,14 @@ resource "aws_instance" "server" {
      connection {
       type        = "ssh"
       user        = "ubuntu"
-      private_key = file("camel1.pem")
+      private_key = file("assign1.pem")
       host        = aws_instance.server.public_ip
    }
   }
  }
 
 resource "aws_key_pair" "key" {
-  key_name   = "camel1"
+  key_name   = "assign1"
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC6xVFchzizOIsXpjGZQ8FD/1Qgvo0Ki/sfrX5hX1YHsb4ylfNgUm6A3lCVn1oAKBqLB7zWCzVL81vwpbtjMG1gLe+RiLTM0GG+6sr/1EPvCSb1ocMN7oc5bpyAYptVl+EgSX3UzW3PUxoE2zvMR/okRZZFB3YRop9SKjUShM74+RTB2u2pEv4eyR1PcBjAs6kCGk/gdNrRuYFRwWDutJ6Ymn43L3tis+6UvAR8AMAaAiOrDprGwNTTQ6MOAlGjC4LjjEronkMY2eRSxaIEC75KOm/1wnTzUFxt8WIoh1+cBqdhqDR2V82StuSv1xDmPCycfZtcfqd8EQhK0zI7wvagHp3j3+OrpWfiwBY7/Cr4XxQyhDUstC7hsRnoNITU38Jf3eFkI8JiQtzna5bMsbTy1i+EaRPcUclYyRGLlYZv7EuLuPH8h5hHCDknEYaPUrqWAEpr3Y4c6791o2kgCC7siL4Xko92/rQMdZnE2222sY7fiFxYmJzziB9da3nsgrc= root@ip-10-1-1-18"
 }
 
